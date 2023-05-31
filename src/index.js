@@ -73,6 +73,7 @@ const DatePicker = ({
   disabledDateStyles = {},
   fontFamily,
   onChange,
+  calendarPosition,                  
 }) => {
   const [selectedDate, setSelectedDate] = useState(
     initialSelectedDate || moment().format("YYYY-MM-DD")
@@ -565,7 +566,7 @@ const DatePicker = ({
     <View
       style={{
         position: "relative",
-        justifyContent: "center",
+        justifyContent: {calendarPosition || "center"},
         minHeight: 350,
         width: "100%",
         alignItems: "center",
