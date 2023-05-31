@@ -566,7 +566,7 @@ const DatePicker = ({
     <View
       style={{
         position: "relative",
-        justifyContent: {calendarPosition || "center"},
+        justifyContent: calendarPosition || "center",
         minHeight: 350,
         width: "100%",
         alignItems: "center",
